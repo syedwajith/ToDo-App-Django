@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(aqua,blue);
+}
+.home-cls,.view-cls {
+    padding: 20px;
+}
+.home-cls input,.view-cls input{
+    padding: 30px;
+}
+.home-cls input[type="text"], .home-cls input[type="date"]
+{
+    padding: 5px;
+    width: 200px;
+    height: 4%;
+    display: block;
+    transition: 0.24;
+    cursor: pointer;
+}
+.home-cls input[type="button"],.home-cls input[type="submit"],.view-cls input[type="button"]
+{
+    padding: 5px;
+    width: 8%;
+    height: 4%;
+    display: block;
+    color:white;
+    font-weight:normal;
+    border: 0;
+    background-color:darkslategrey;
+    transition: 0.24;
+    cursor: pointer;
+}
+table.table {
+    border: 2;
+    align-self: center;
+    transition: 0.25px;
+}
+th {
+    padding: 10px;
+    font-size: 18px;
+}
+td {
+    padding: 5px;
+    font-size: 15px;
+}
+td a {
+    color: red;
+    font-weight: bold;
+}
+.alert {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}

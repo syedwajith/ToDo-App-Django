@@ -1,0 +1,43 @@
+<html>
+    {% extends 'to_do_app/base.html' %}
+    {% load static %}
+    {% block head %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    {% endblock %}
+    {% block content %}
+    <div class="home-cls">
+        <h1>To Do App</h1>
+        <form method="post">
+            {% csrf_token %}
+            <table class="table">
+                <tr>
+                    <td>
+                        <label>Enter Data</label>
+                    </td>
+                    <td>
+                        <input type="text" name="content" placeholder="Enter ToDo">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Select Date</label>
+                    </td>
+                    <td>
+                        <input type="date" name="date">
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <input type="submit" value="Add ToDo data">
+            <br>
+            <br>
+            <a href="/to_do_app/viewdata">
+                <input type="button" value="View Data">
+            </a>
+        </form>
+        
+    </div>
+
+    {% endblock %}
+</html>
