@@ -2,12 +2,15 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background: linear-gradient(aqua,blue);
 }
+
 .home-cls,.view-cls {
     padding: 20px;
 }
+
 .home-cls input,.view-cls input{
     padding: 30px;
 }
+
 .home-cls input[type="text"], .home-cls input[type="date"]
 {
     padding: 5px;
@@ -17,6 +20,11 @@ body {
     transition: 0.24;
     cursor: pointer;
 }
+
+.view-cls a, .home-cls a {
+    text-decoration: none;
+}
+
 .home-cls input[type="button"],.home-cls input[type="submit"],.view-cls input[type="button"]
 {
     padding: 5px;
@@ -30,23 +38,54 @@ body {
     transition: 0.24;
     cursor: pointer;
 }
-table.table {
-    border: 2;
-    align-self: center;
-    transition: 0.25px;
+
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.432);
+    margin-left: 3%;
 }
-th {
-    padding: 10px;
-    font-size: 18px;
+
+.content-table thead tr {
+    background-color: yellowgreen;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+    font-size: 17px;
 }
-td {
-    padding: 5px;
-    font-size: 15px;
+
+.content-table th, .content-table td {
+    padding: 12px 15px;
+    text-transform: capitalize;
 }
-td a {
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f302;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid yellowgreen;
+}
+
+.content-table tbody tr:hover {
+    font-weight: bold;
+    color: black;
+}
+
+.content-table td a {
     color: red;
     font-weight: bold;
+    text-decoration: none;
 }
+
 .alert {
     font-size: 18px;
     font-weight: bold;
